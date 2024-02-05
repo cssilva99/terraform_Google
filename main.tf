@@ -1,6 +1,6 @@
 provider "google" {
   region  = "us-east1"
-  project = "solar-theory-245311"
+  //project = "solar-theory-245311"
   default_labels = {
     GOOGLE_CREDENTIALS = "O9xgrXKqDAKlW8jeMUw9IO2XJ7S11NlQ//UlyPbt"
   }
