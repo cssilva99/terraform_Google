@@ -1,6 +1,6 @@
 provider "google" {
   region  = "us-east1"
-  // project = var.project_name
+  project = "solar-theory-245311"
 }
 
 resource "google_compute_instance" "standalone-instance-1" {
