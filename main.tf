@@ -21,8 +21,7 @@ resource "google_compute_instance" "standalone-instance-1" {
 }
 
   network_interface {
-    subnetwork = google_compute_subnetwork.my-custom-subnet.name
-
+    subnetwork = "0.0.0.0/28"
     access_config {
       // Ephemeral IP
     }
