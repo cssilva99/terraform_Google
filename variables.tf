@@ -10,6 +10,7 @@ variable "region_zone_2" {
   default = "us-central1-c"
 }
 
-variable "project_name" {
-  description = "The ID of the Google Cloud project"
-}
+//variable "project_name" {
+//  default = "solar-theory-245311"
+//  description = "The ID of the Google Cloud project"
+//}
