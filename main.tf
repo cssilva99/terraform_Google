@@ -2,7 +2,7 @@ provider "google" {
   region  = "us-east1"
   project = "solar-theory-245311"
   default_labels = {
-    my_global_key = "O9xgrXKqDAKlW8jeMUw9IO2XJ7S11NlQ//UlyPbt"
+    GOOGLE_CREDENTIALS = "O9xgrXKqDAKlW8jeMUw9IO2XJ7S11NlQ//UlyPbt"
   }
 }
 
@@ -19,11 +19,3 @@ resource "google_compute_instance" "standalone-instance-1" {
     }
   }
 }
-//  network_interface {
-//    subnetwork = google_compute_subnetwork.my-custom-subnet.name
-
-//    access_config {
-//      // Ephemeral IP
-//    }
-//  }
-//}
