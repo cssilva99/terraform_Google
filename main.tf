@@ -15,7 +15,7 @@ resource "google_compute_instance" "standalone-instance-1" {
       image = "debian-cloud/debian-8"
     }
   }
-
+}
 //  network_interface {
 //    subnetwork = google_compute_subnetwork.my-custom-subnet.name
 
