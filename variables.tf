@@ -15,7 +15,8 @@ variable "GOOGLE_CREDENTIALS" {
   sensitive = true
   description = "Google Cloud service account credentials"
 }
-//variable "project_name" {
-//  default = "solar-theory-245311"
-//  description = "The ID of the Google Cloud project"
-//}
+
+variable "project_name" {
+  default = "solar-theory-245311"
+  description = "The ID of the Google Cloud project"
+}
