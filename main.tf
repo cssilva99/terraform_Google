@@ -1,4 +1,9 @@
 provider "google" {
+  alias = "impersonation"
+  scopes = [
+    "https://www.googleapis.com/auth/cloud-platform",
+    "https://googleapis.com/auth/userinfo.email"
+  ]
   region  = "us-east1"
   credentials = var.GOOGLE_CREDENTIALS
   project = var.project_name
