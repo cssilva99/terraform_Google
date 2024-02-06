@@ -1,6 +1,7 @@
 provider "google" {
   region  = "us-east1"
   credentials = var.GOOGLE_CREDENTIALS
+  project = var.project_name
 }
 resource "google_compute_instance" "standalone-instance-1" {
   name         = "standalone-instance-1"
