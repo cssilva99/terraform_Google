@@ -2,11 +2,11 @@ provider "google" {
   region  = "us-east1"
   credentials = var.GOOGLE_CREDENTIALS
   project = var.project_name
-  //alias = "impersonation"
-  //scopes = [
-    //"https://www.googleapis.com/auth/cloud-platform"
-    //,"https://googleapis.com/auth/userinfo.email"
-  //]
+  alias = "impersonation"
+  scopes = [
+   "https://www.googleapis.com/auth/cloud-platform",
+   "https://www.googleapis.com/auth/userinfo.email",
+ ]
 }
 
 resource "google_compute_instance" "standalone-instance-1" {
